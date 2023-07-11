@@ -13,7 +13,7 @@ class Sms implements Message {
 
         System.out.println("Enter the Phone Number to send message");
         String phoneNumber = sc.nextLine();
-        String regex= ("(0/91)?[7-9][0-9]{9}");
+        String regex= ("[6-9]\\d{9}");
         if(phoneNumber.matches(regex)){
             System.out.println("Enter your message to send");
             String smsMessage = sc.nextLine();
